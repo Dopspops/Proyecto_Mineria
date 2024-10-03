@@ -23,7 +23,7 @@ from skimage import io
 
 #----- Lectura de la Imagen ---------------------------------------
 Logo = io.imread(r"./Imagenes/ITESO_Logo.png")
-
+GraficoCaja_todos_anios = io.imread(r"./Imagenes/grafico_todos_anios_boxplot.png")
 
 #----- Renderizado de la Imagen -----------------------------------
 st.image(Logo, width = 500)
@@ -37,8 +37,7 @@ st.divider()
 
 # ------- Grafico General todos los Años (Box) --------------------
 st.subheader("Gráfico de Caja - Todos los Años (en base al Año de Nacimiento)")
-GraficoCaja_todos_anios = io.imread(r"./Imagenes/grafico_todos_anios_boxplot.png")
-st.image(GraficoCaja_todos_anios, width = 600)
+st.image(GraficoCaja_todos_anios)
 
 
 
