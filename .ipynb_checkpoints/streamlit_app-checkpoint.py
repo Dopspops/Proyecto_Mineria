@@ -32,10 +32,11 @@ st.image(Logo, width = 500)
 st.title("Proyecto de Programación para Mineria de Datos")
 st.subheader(":blue[Ferdinand Josef Bierbaum Agular - Exp. 739162]")
 st.markdown("Este proyecto se estaría basando sobre los datos proporcionados de MiBici. Se tienen registros desde 2015 al 2024.")
-st.markdown("El procedimiento para la lectura de los datos fue separar todos los archivos por su respectivo año. Es decir, todos los archivos de un respectivo año estan en una misma carpeta."
-"Después, se crea un nuevo CSV con todos los datos del respectivo año."
-"Con este nuevo archivo, se realizó la limpia de datos, se removieron los años de 1910 hasta 1960 y 2018 a 2024. A su vez, se reemplazaron algunos años, como 200 a 2000."
-"Terminando este proceso, se tienen archivos nuevos limpios. Estos son los que se usaron para las siguientes gráficas.")
+st.markdown("El procedimiento para la lectura de los datos fue separar todos los archivos por su respectivo año. Es decir, todos los archivos de un respectivo año estan en una misma carpeta.")
+st.markdown("Después, se crea un nuevo CSV con todos los datos del respectivo año."
+"Con este nuevo archivo, se realizó la limpia de datos, se removieron los años de 1910 hasta 1960 y 2018 a 2024. A su vez, se reemplazaron algunos años, como 200 a 2000.")
+st.markdown("Terminando este proceso, se tienen archivos nuevos limpios. Estos son los que se usaron para las siguientes gráficas.")
+
 st.divider()
 
 
