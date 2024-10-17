@@ -53,46 +53,56 @@ st.divider()
 # ------- Grafico Agrupacion por Estaciones --------------------
 st.subheader("Gráfico Agrupación por Estaciones")
 st.image(GraficaEstaciones)
+plt.show()
 st.divider()
+
 
 # ------ Grafico Numeros de Viajes (mes y año)
 st.subheader("Gráfico Numeros de Viajes (mes y año )")
 st.image(GracicaNumViajesEstaciones)
+plt.show()
 st.divider()
 
 # ------ Promedios de Viaje 
 st.subheader("Gráfico Promedio de Viaje")
 st.image(GraficaPromedioDeViaje)
+plt.show()
 st.divider()
 
 # ------ Comparacion Tiempo y Ruta entre Genero
 st.subheader("Gráfico por Uso por Dias de le Semana")
 st.image(GraficaComparacionTiempoRutaGenero)
+plt.show()
 st.divider()
 
 # ------ Grafico Uso por Dias de Semana
 st.subheader("Gráfico sobre el Uso por Dias de Semana")
-st.image(GraficaUsoDiasSemana4)
+st.image(GraficaUsoDiasSemana)
+plt.show()
 st.divider()
 
 # ------ Dinero Gastado
 st.subheader("Gráfico Sobre el Dinero Gastado")
 st.image(GraficaDineroGastado)
+plt.show()
 st.divider()
 
 # ------ Uso de Estaciones 
 st.subheader("Gráfico de Uso de Estaciones")
 st.image(GraficaUsoDeEstaciones)
+plt.show()
 st.divider()
 
 # ------ Correlación entre edad y tiempo de viaje
 st.subheader("Gráfico de Correlacion entre Edad y Tiempo de Viaje")
 st.image(GraficaCorrelacionEdadTiempo)
+plt.show()
 st.divider()
 
 # ------ Correlacion dia de la semana y tiempo de viaje
 st.subheader("Gráfico de Correlacion sobre Dia de la Semana y Tiempo de Viaje")
 st.image(GraficaCorrelacionDiaSemanaTiempo)
+plt.show()
 st.divider()
 
 
