@@ -59,7 +59,7 @@ st.divider()
 
 # ------ Grafico Numeros de Viajes (mes y año)
 st.subheader("Gráfico Numeros de Viajes (mes y año )")
-st.image(GracicaNumViajesEstaciones)
+st.image(GraficaNumViajesEstaciones)
 plt.show()
 st.divider()
 
