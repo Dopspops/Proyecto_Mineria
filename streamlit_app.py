@@ -23,7 +23,7 @@ from skimage import io
 
 #----- Lectura de la Imagen ---------------------------------------
 Logo = io.imread(r"./Imagenes/ITESO_Logo.png")
-GraficaEstaciones = io.imread(r"./Imagenes/Agrupacion_por_estaciones_Numero_de_viajes.png")
+GraficaEstaciones = io.imread(r"./Imagenes/Agrupacion_por_estaciones_Numeros_de_viajes.png")
 GraficaNumViajesEstaciones = io.imread(r"./Imagenes/num_viajes_por_mesyanio.png")
 GraficaPromedioDeViaje = io.imread(r"./Imagenes/promedio_tiempo_viaje_poranio.png")
 GraficaComparacionTiempoRutaGenero = io.imread(r"./Imagenes/tiempo_ruta_entre_genero.png")
