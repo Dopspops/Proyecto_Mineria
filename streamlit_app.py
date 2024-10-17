@@ -52,7 +52,7 @@ st.divider()
 
 # ------- Grafico Agrupacion por Estaciones --------------------
 st.subheader("Gráfico Agrupación por Estaciones")
-st.image(GracicaEstaciones)
+st.image(GraficaEstaciones)
 st.divider()
 
 # ------ Grafico Numeros de Viajes (mes y año)
