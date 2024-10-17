@@ -23,7 +23,17 @@ from skimage import io
 
 #----- Lectura de la Imagen ---------------------------------------
 Logo = io.imread(r"./Imagenes/ITESO_Logo.png")
-GraficoCaja_todos_anios = io.imread(r"./Imagenes/grafico_todos_anios_boxplot.png")
+GraficaEstaciones = io.imread(r"./Imagenes/Agrupacion_por_estaciones_Numero_de_viajes.png")
+GraficaNumViajesEstaciones = io.imread(r"./Imagenes/num_viajes_por_mesyanio.png")
+GraficaPromedioDeViaje = io.imread(r"./Imagenes/promedio_tiempo_viaje_poranio.png")
+GraficaComparacionTiempoRutaGenero = io.imread(r"./Imagenes/tiempo_ruta_entre_genero.png")
+GraficaUsoDiasSemana = io.imread(r"./Imagenes/uso_dias_semana.png")
+GraficaDineroGastado = io.imread(r"./Imagenes/apox_dinero_gastado.png")
+GraficaUsoDeEstaciones = io.imread(r"./Imagenes/uso_de_estaciones.png")
+GraficaCorrelacionEdadTiempo = io.imread(r"./Imagenes/corr_edad_tiempo_viaje.png")
+
+GraficaCorrelacionDiaSemanaTiempo = io.imread(r"./Imagenes/corr_dia_semana_tiempo_viaje.png")
+
 
 #----- Renderizado de la Imagen -----------------------------------
 st.image(Logo, width = 500)
@@ -40,24 +50,52 @@ st.markdown("Terminando este proceso, se tienen archivos nuevos limpios. Estos s
 st.divider()
 
 
-# ------- Grafico General todos los Años (Box) --------------------
-st.subheader("Gráfico de Caja - Todos los Años (en base al Año de Nacimiento)")
-st.image(GraficoCaja_todos_anios)
+# ------- Grafico Agrupacion por Estaciones --------------------
+st.subheader("Gráfico Agrupación por Estaciones")
+st.image(GracicaEstaciones)
+st.divider()
+
+# ------ Grafico Numeros de Viajes (mes y año)
+st.subheader("Gráfico Numeros de Viajes (mes y año )")
+st.image(GracicaNumViajesEstaciones)
+st.divider()
+
+# ------ Promedios de Viaje 
+st.subheader("Gráfico Promedio de Viaje")
+st.image(GraficaPromedioDeViaje)
+st.divider()
+
+# ------ Comparacion Tiempo y Ruta entre Genero
+st.subheader("Gráfico por Uso por Dias de le Semana")
+st.image(GraficaComparacionTiempoRutaGenero)
+st.divider()
+
+# ------ Grafico Uso por Dias de Semana
+st.subheader("Gráfico sobre el Uso por Dias de Semana")
+st.image(GraficaUsoDiasSemana4)
+st.divider()
+
+# ------ Dinero Gastado
+st.subheader("Gráfico Sobre el Dinero Gastado")
+st.image(GraficaDineroGastado)
+st.divider()
+
+# ------ Uso de Estaciones 
+st.subheader("Gráfico de Uso de Estaciones")
+st.image(GraficaUsoDeEstaciones)
+st.divider()
+
+# ------ Correlación entre edad y tiempo de viaje
+st.subheader("Gráfico de Correlacion entre Edad y Tiempo de Viaje")
+st.image(GraficaCorrelacionEdadTiempo)
+st.divider()
+
+# ------ Correlacion dia de la semana y tiempo de viaje
+st.subheader("Gráfico de Correlacion sobre Dia de la Semana y Tiempo de Viaje")
+st.image(GraficaCorrelacionDiaSemanaTiempo)
+st.divider()
 
 
 
-#------------------------------------------------------------------
-#----- Configuración de los Elementos del DashBoard ---------------
-#------------------------------------------------------------------
 
-#----- Renderizado de la Imagen y el Título en el Dashboard -------
-st.sidebar.image(Logo, width = 200)
-st.sidebar.markdown("## MENÚ DE CONFIGURACIÓN")
-st.sidebar.divider()
-
-#------ Selector sobre año para graficos -------------------------
-vars_anios = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
-anio_default = vars_anios.index('2024')
-anio_most_graficos = st.sidebar.selectbox('Selecciona el Año para Mostrar los Gráficos:', vars_anios, index = anio_default)
-st.sidebar.divider()
 
